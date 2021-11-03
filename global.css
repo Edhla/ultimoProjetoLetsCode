@@ -1,0 +1,387 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Navbar */
+nav{
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(10 138 204);
+}
+#navImg{
+    width: 65%;
+}
+.navbar{
+    width: 90vw;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.esquerda{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.direita{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+    margin-inline: 1vw;
+}
+
+/* Section */
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+}
+
+/* Aside */
+aside{
+    margin-right: 2vw;
+    
+}
+form{
+     width: 20vw;
+     
+}
+form div{
+    margin-bottom: 10%;
+    font-weight: 500;
+    color: rgb(129 118 86);
+    border-radius: 2%;
+    font-size: 0.67rem;
+}
+.filter{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 8%;
+    background-color: #fdd685;
+    border: 1px solid #fdb10f;
+}
+#imovelCOmP{
+    margin-bottom: 5%;
+}
+input[name='search'] {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: 6vh;
+    margin-top: 5%;
+    border-radius: 5px;
+    border: none;
+    padding: 3% 0 3% 5%;
+    box-shadow: 0 2px  rgba(90, 90, 90, 0.164);
+    font-size: 0.67rem;
+    letter-spacing: 0.05em;
+    
+}
+
+input[name='search']:focus {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid rgb(10 138 204);
+    box-shadow: none;
+}
+.checkBox{
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.checkBox input[name='checkBox'] { 
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    appearance: none;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    transform: translateX(5%);
+}
+.checkBox input[name='checkBox']:checked {
+    transform: translateX(85%);
+}
+.checkBoxLabel {
+    width: 40px;
+    height: 23px;
+    border-radius: 80px;
+    border: 1px solid rgba(17,144,205,.1);
+    background-color: rgba(17,144,205,.1);
+}
+ input[name='checkBox']:checked ~ .checkBoxLabel {
+    background-color: rgb(10 138 204);
+}
+#labelTour {
+margin-left: 1vw;
+}
+#tipoImovelP{
+    margin-bottom: 1%;
+}
+select[name='select']{
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    height: 6vh;
+    margin-top: 5%;
+    border-radius: 5px;
+    border: none;
+    padding: 3% 0 3% 5%;
+    box-shadow: 0 2px  rgba(90, 90, 90, 0.164);
+    color: rgb(129 118 86);
+    margin-bottom: 8%;
+    font-size: 0.67rem;
+    letter-spacing: 0.05em;
+}
+.precos #text, .precos #inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.precos #inputs{
+    width: 50%;
+}
+.inputNumb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+.inputNumb input{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 7.5vw;
+    height: 6vh;
+    border-radius: 3px;
+    border: none;
+    padding: 0 10% 0 30%;
+    text-align: right;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    cursor: pointer;
+    -moz-appearance: textfield;
+    box-shadow: 0 2px  rgba(90, 90, 90, 0.164);
+}
+input[type='number']:focus {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2px solid rgb(10 138 204);
+    box-shadow: none;
+}
+.notacao{
+    position: absolute;
+    z-index: 2;
+    transform: translate(1em, 1em);
+    font-weight: 300;
+    font-size: 0.8em;
+}
+#max, #min{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.precoP{
+    margin-bottom: 7%;
+}
+.detail{
+    width: 2vw;
+    height: 0.7px;
+    background-color: rgba(90, 90, 90, 0.356);
+    transform: translateY(1000%);
+}
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tabs li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10%
+}
+.tabsRadio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 2.5vw;
+    height: 2vw;
+    border-radius: 100px;
+    background-color: white;
+    appearance: none;
+}
+
+.tabsRadio:hover{
+    background-color: rgba(211, 211, 211, 0.822);
+}
+.tabsRadio:checked{
+    background-color: rgb(10 138 204);
+}
+.tabLabels{
+    font-weight: 300;
+    position: absolute;
+    transform: translateY(0.5em);
+}
+.tabsRadio:checked ~ .tabLabels{
+   color: white;
+}
+.secondFilter{
+   border: 1px solid rgba(211, 211, 211, 0.822); 
+   padding: 8%;
+}
+.secondFilter input{
+    border: 1px solid rgba(211, 211, 211, 0.822);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 30% 0 10%;
+    text-align: right;
+}
+
+
+/* LEFTSIDE */
+.leftSide{
+    width: 70vw;
+}
+.insidNav{
+    border-bottom: 1px solid rgba(90, 90, 90, 0.13);
+    margin-bottom: 2%;
+}
+.insidNav ul{
+    width: 60%;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.insidNavDetail{
+    position: absolute;
+    height: 1px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: rgba(211, 211, 211, 0.822);
+    
+}
+.insidNav li{
+    padding: 1% 3% 2% 3%;  
+}
+#liDetail{
+    border-bottom: 3.5px solid rgb(10 138 204);
+}
+.insidNav a{
+    color: rgb(10 138 204);
+    text-decoration: none;
+    font-size: 0.67rem;
+}
+
+/* Insid container */
+.container h1{
+    font-size: medium;
+    margin-bottom: 1%;
+}
+#tab{
+    margin: 8% 0 0 0;
+}
+.tag{
+    border: 1px solid rgb(10 138 204);
+    font-size: 0.6em;
+    color: rgb(10 138 204);
+    width: 10vw;
+    height: 4vh;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.specialNumber{
+    font-weight: bold;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+.card img{
+    width: 25vw;
+    height: 35vh;
+    object-fit: cover;
+}
+.textCard{
+    width: 40vw;
+    font-size: small;
+    border-radius:0 3px 3px 0;
+    border-top: 1px solid rgba(211, 211, 211, 0.822);
+    border-right: 1px solid rgba(211, 211, 211, 0.822);
+    border-bottom: 1px solid rgba(211, 211, 211, 0.822);
+    padding: 2%;
+}
+.textCard p{
+    color: rgba(211, 211, 211, 0.822);
+    font-size: 0.8em;
+    margin-bottom: 2%;
+}
+.textCard h2{
+    font-size: 1.3em;
+    margin-bottom: 2%;
+}
+.textCard h6{
+    font-size: 0.8em;
+    margin-bottom: 3%;
+}
+.textCard ul{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+.textCard ul li{
+    margin-right: 2%;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgba(136, 136, 136, 0.822);
+    background-color: rgba(211, 211, 211, 0.822);
+    padding: 1%;
+    border-radius: 50px;
+    margin-bottom: 1%;
+}
+.textCard h3{
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+.textCard h4{
+    font-size: 0.8em;
+}

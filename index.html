@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VivaReal</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul class="esquerda">
+                <li><a href="#"><img src="./assets/vivareal-5bcdffca.svg" alt="" id="navImg"></a></li>
+                <li><a href="#">COMPRAR</a></li>
+                <li><a href="#">ALUGAR</a></li>
+                <li><a href="#">IMÓVEIS NOVOS</a></li>
+                <li><a href="#">SELEÇÂO VIVA REAL</a></li>
+                <li><a href="#">DESCOBRIR</a></li>
+                <li><a href="#">FINANCIAMENTO</a></li>
+            </ul>
+            <ul class="direita">
+                <li><a href="#">ANUNCIAR IMÓVEIS</a></li>
+                <li><a href="#">ENTRAR</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <aside>
+            <form action="">
+                <div class="filter">
+                    <p>LOCALIZAÇÃO DO IMÓVEL</p>
+                    <input type="text" name="search" id="" placeholder="Digite uma cidade">
+                    <div id="tab"></div>
+                    <p id="imovelCOmP">IMÓVEL COM</p>
+                    <div class= "checkBox">
+                        <input type="checkbox" name="checkBox" id="checkBox">
+                        <label for="checkBox" class="checkBoxLabel"></label>
+                        <label for="checkBox" id="labelTour">Tour Virtual ou Vídeos</label>
+                    </div>
+                    <p id="tipoImovelP">TIPO DE IMÓVEL</p>
+                    <select name="select" id="">
+                        <option value="MostrarTodos">Mostrar todos</option>
+                    </select>
+                    <div class="inputNumb">
+                        <div id="max">
+                            <p class="precoP">PREÇO MÍNIMO</p>
+                            <label for="precoInputMax" class="notacao">R$</label>
+                            <input type="number" name="minimo" id="precoInputMax" placeholder="">
+                        </div>
+                        <div class="detail"></div>
+                        <div id="min">
+                            <p class="precoP">PREÇO MÁXIMO</p>
+                            <label for="precoInputMin" class="notacao">R$</label>
+                            <input type="number" name="maximo" id="precoInputMin" placeholder="ilimitado">
+                        </div>
+                    </div>
+                    <p class="precoP">NÚMEROS DE QUARTOS</p>
+                    <ul class="tabs">
+                        <li>
+                            <input type="radio" name="bedRadio" id="1Bed" class="tabsRadio">
+                            <label for="1Bed" class="tabLabels">1+</label>   
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="2Bed" class="tabsRadio">
+                            <label for="2Bed" class="tabLabels">2+</label>
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="3Bed" class="tabsRadio">
+                            <label for="3Bed" class="tabLabels">3+</label> 
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="4Bed" class="tabsRadio">
+                            <label for="4Bed" class="tabLabels">4+</label>   
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="5Bed" class="tabsRadio">
+                            <label for="5Bed" class="tabLabels">5+</label>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="secondFilter">
+                    <div class="inputNumb">
+                        <div id="max">
+                            <p class="precoP">ARÉA MÍNIMA</p>
+                            <input type="number" name="minimo" id="precoInputMax" placeholder="">
+                            <label for="precoInputMax" class="notacao" id="labelArea">m²</label>
+                        </div>
+                        <div class="detail"></div>
+                        <div id="min">
+                            <p class="precoP">ARÉA MÁXIMA</p>
+                            <input type="number" name="maximo" id="precoInputMin" placeholder="ilimitado">
+                            <label for="precoInputMin" class="notacao" id="labelArea">m²</label>
+                        </div>
+                        </div>
+                        <p class="precoP">NÚMEROS DE VAGAS NA GARAGEM</p>
+                    <ul class="tabs">
+                        <li>
+                            <input type="radio" name="bedRadio" id="1Bed" class="tabsRadio">
+                            <label for="1Bed" class="tabLabels">1+</label>   
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="2Bed" class="tabsRadio">
+                            <label for="2Bed" class="tabLabels">2+</label>
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="3Bed" class="tabsRadio">
+                            <label for="3Bed" class="tabLabels">3+</label> 
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="4Bed" class="tabsRadio">
+                            <label for="4Bed" class="tabLabels">4+</label>   
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="5Bed" class="tabsRadio">
+                            <label for="5Bed" class="tabLabels">5+</label>
+                        </li>
+                    </ul>
+                    <p class="precoP">NÚMEROS DE BANHEIROS</p>
+                    <ul class="tabs">
+                        <li>
+                            <input type="radio" name="bedRadio" id="1Bed" class="tabsRadio">
+                            <label for="1Bed" class="tabLabels">1+</label>   
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="2Bed" class="tabsRadio">
+                            <label for="2Bed" class="tabLabels">2+</label>
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="3Bed" class="tabsRadio">
+                            <label for="3Bed" class="tabLabels">3+</label> 
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="4Bed" class="tabsRadio">
+                            <label for="4Bed" class="tabLabels">4+</label>   
+                        </li>
+                        <li >
+                            <input type="radio" name="bedRadio" id="5Bed" class="tabsRadio">
+                            <label for="5Bed" class="tabLabels">5+</label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </aside>
+        <div class="leftSide">
+            <div class="insidNav">
+                <ul>
+                    <li id="liDetail"><a href="#">COMPRAR</a></li>
+                    <li><a href="#">ALUGAR</a></li>
+                    <li><a href="#">IMÓVEIS</a></li>
+                    <li><a href="#">SELEÇÃO VIVA REAL</a></li>
+                </ul>
+                <div class="insidNavDetail"></div>
+            </div>
+                <div class="container"> </div>
+        </div>
+    </section>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
